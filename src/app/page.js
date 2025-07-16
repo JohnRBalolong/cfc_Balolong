@@ -1,8 +1,8 @@
 
 import Header from './components/Header'; 
-import AnimatedSection from './components/AnimatedSection';
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
-import { PhoneIcon, TruckIcon, MapPinIcon, GiftIcon } from '@heroicons/react/24/outline';
+// import AnimatedSection from './components/AnimatedSection';
+// import { ArrowRightIcon } from '@heroicons/react/24/solid';
+// import { PhoneIcon, TruckIcon, MapPinIcon, GiftIcon } from '@heroicons/react/24/outline';
 
 // Correct import path for the reusable component
 import CashForCarsContent from './components/CashForCarsContent';
