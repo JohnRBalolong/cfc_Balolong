@@ -1,12 +1,9 @@
-
-'use client'; // This directive is crucial for client-side interactivity
+'use client';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-// Import your Heroicons
 import { PhoneIcon, TruckIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
-
 
 export default function ContactForm() {
   const [form, setForm] = useState({ contact: '', vehicle: '', address: '' });
@@ -37,7 +34,6 @@ export default function ContactForm() {
       setSubmitted(false);
       return;
     }
-
     console.log('Form Submitted:', form);
     setSubmitted(true);
     setForm({ contact: '', vehicle: '', address: '' });
@@ -64,8 +60,7 @@ export default function ContactForm() {
             onChange={handleChange}
             type="text"
             placeholder="Your contact number"
-            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.contact ? 'border-red-400' : 'border-transparent'
-              } rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
+            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.contact ? 'border-red-400' : 'border-transparent'} rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
           />
           {errors.contact && <p className="text-red-500 text-sm mt-1">{errors.contact}</p>}
         </div>
@@ -77,8 +72,7 @@ export default function ContactForm() {
             onChange={handleChange}
             type="text"
             placeholder="Vehicle rego OR make, model & year"
-            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.vehicle ? 'border-red-400' : 'border-transparent'
-              } rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
+            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.vehicle ? 'border-red-400' : 'border-transparent'} rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
           />
           {errors.vehicle && <p className="text-red-500 text-sm mt-1">{errors.vehicle}</p>}
         </div>
@@ -90,8 +84,7 @@ export default function ContactForm() {
             onChange={handleChange}
             type="text"
             placeholder="Pickup address (start typing...)"
-            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.address ? 'border-red-400' : 'border-transparent'
-              } rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
+            className={`pl-10 w-full px-4 py-3 bg-gray-100 border ${errors.address ? 'border-red-400' : 'border-transparent'} rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500`}
           />
           {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
         </div>
@@ -105,7 +98,7 @@ export default function ContactForm() {
             className="inline-block"
             initial={{ x: 0 }}
             whileHover={{ x: 6 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           >
             <span className="h-8 w-8 rounded-full bg-white flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
               <ArrowRightIcon className="h-4 w-4 text-green-600" strokeWidth={3} />

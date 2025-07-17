@@ -8,7 +8,7 @@ export default function ImageSection() {
         alt="Tow truck"
         width={1200}
         height={800}
-        priority // triggers preload
+        priority // Correct usage: next/image component
         className="w-full h-auto rounded-lg"
       />
     </div>

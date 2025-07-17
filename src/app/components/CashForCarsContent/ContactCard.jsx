@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import ContactForm from '@/app/(sections)/cash-for-cars/ContactForm'; // Direct import
+import ContactForm from './ContactForm';
 
 export default function ContactCard() {
   return (

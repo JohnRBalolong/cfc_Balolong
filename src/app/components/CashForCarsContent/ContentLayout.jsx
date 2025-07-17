@@ -1,4 +1,3 @@
-
 import HeadingSection from './HeadingSection';
 import ImageSection from './ImageSection';
 import ContactCard from './ContactCard';
@@ -17,7 +16,7 @@ export default function ContentLayout() {
           <ImageSection />
         </div>
 
-        {/* This is client-side */}
+        {/* Client-only interactive form */}
         <ContactCard />
       </div>
     </section>

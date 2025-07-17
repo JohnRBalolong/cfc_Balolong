@@ -1,4 +1,4 @@
-import ContentLayout from './cashforcars/ContentLayout';
+import ContentLayout from './ContentLayout';
 
 export default function CashForCarsContent() {
   return <ContentLayout />;
