@@ -1,4 +1,4 @@
-import '../../styles/globals.css'; 
+import '../../styles/globals.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Inter } from 'next/font/google';
 
@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/img/Group-2958.webp" as="image" />
+      </head>
       <body className={inter.className}>
         {children}
       </body>

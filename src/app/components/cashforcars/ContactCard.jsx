@@ -1,17 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import dynamic from 'next/dynamic'; // Import dynamic from next/dynamic
-
-
-// Dynamically import ContactForm
-const DynamicContactForm = dynamic(
-  () => import('@/app/(sections)/cash-for-cars/ContactForm'),
-  {
-    loading: () => <div className="text-center py-8">Loading form...</div>, // Optional: A loading state while the component is being loaded
-    ssr: false, // This is crucial to ensure it's only rendered on the client side
-  }
-);
+import ContactForm from '@/app/(sections)/cash-for-cars/ContactForm'; // Direct import
 
 export default function ContactCard() {
   return (
@@ -24,7 +14,7 @@ export default function ContactCard() {
       <h2 className="text-2xl font-bold text-center text-red-600 mb-6">
         SELL YOUR CAR FOR CASH NOW!
       </h2>
-      <DynamicContactForm /> {/* Use the dynamically imported component */}
+      <ContactForm />
     </motion.div>
   );
 }
