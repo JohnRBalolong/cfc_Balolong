@@ -1,8 +1,12 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Add this line here for static export
-  async headers() {
+  output: 'export',
+  images: {
+    unoptimized: true, // This is the key for static export
+  },
+  async headers() { // This part won't apply to static sites
     return [
       {
         source: '/img/:path*',
